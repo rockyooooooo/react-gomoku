@@ -64,6 +64,7 @@ export default function Gomoku() {
     return () => {
       setRound(step)
       setIsBlackNext(!(step % 2))
+      setWinner('')
     }
   }
 
