@@ -8,7 +8,7 @@ const StyledSquare = styled.div`
   position: relative;
   display: inline-block;
   border: 1px solid black;
-  padding: 1rem;
+  padding: 0.75rem;
 `
 
 export default function Square({ square, boardRowIndex, squareIndex, onClick }) {

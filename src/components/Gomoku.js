@@ -32,11 +32,10 @@ const Subtitle = styled.h2`
   font-size: 2rem;
 `
 
-const Info = styled.div`
-  width: 15rem;
-`
+const Info = styled.div``
 
 const Status = styled.div`
+  width: 15rem;
   font-size: 1.5rem;
   text-transform: capitalize;
 `

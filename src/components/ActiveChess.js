@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const StyledActiveChess = styled.div`
   position: absolute;
   z-index: 1;
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 50%;
 
   background: ${(props) => {
