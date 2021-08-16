@@ -57,7 +57,26 @@ export default function Gomoku() {
   const [isBlackNext, setIsBlackNext] = useState(true)
   const [status, setStatus] = useState('')
   const [round, setRound] = useState(0)
+
   const current = history[round].squares
+
+  const jumpTo = (step) => {
+    return () => {
+      setRound(step)
+      setIsBlackNext(!(step % 2))
+    }
+  }
+
+  const moves = history.map((move, step) => {
+    const description = step ?
+      `Go to Move ${step}` :
+      `Go to Game Start`
+    return (
+      <li key={step}>
+        <button onClick={jumpTo(step)}>{description}</button>
+      </li>
+    )
+  })
 
   useEffect(() => {
     const winner = calculateWinner(current)
@@ -70,9 +89,9 @@ export default function Gomoku() {
   const handleClick = (boardRowIndex, squareIndex) => {
     return () => {
       if (calculateWinner(current)) return
-
       if (current[boardRowIndex][squareIndex]) return
-      const newHistory = history.slice()
+
+      const newHistory = JSON.parse(JSON.stringify(history.slice(0, round + 1)))
       const squares = current.slice()
       squares[boardRowIndex][squareIndex] = isBlackNext ? 'black' : 'white'
       setHistory(newHistory.concat([{
@@ -90,12 +109,13 @@ export default function Gomoku() {
           <Title>五子棋</Title>
           <Subtitle>Gomoku</Subtitle>
         </Header>
-        <Board squares={current} handleClick={handleClick} />
+        <Board squares={current} onClick={handleClick} />
       </Main>
       <Info>
         <Status>
           {status}
         </Status>
+        <ol>{moves}</ol>
       </Info>
     </StyledGomoku>
   )

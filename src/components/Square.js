@@ -11,7 +11,7 @@ const StyledSquare = styled.div`
   padding: 1rem;
 `
 
-export default function Square({ square, boardRowIndex, squareIndex, handleClick }) {
+export default function Square({ square, boardRowIndex, squareIndex, onClick }) {
   return (
     <StyledSquare>
       {
@@ -22,7 +22,7 @@ export default function Square({ square, boardRowIndex, squareIndex, handleClick
           square={square}
           boardRowIndex={boardRowIndex}
           squareIndex={squareIndex}
-          handleClick={handleClick}
+          onClick={onClick}
         />
       }
     </StyledSquare>
@@ -37,5 +37,5 @@ Square.propTypes = {
   ]),
   boardRowIndex: PropTypes.number,
   squareIndex: PropTypes.number,
-  handleClick: PropTypes.func
+  onClick: PropTypes.func
 }

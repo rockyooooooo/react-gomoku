@@ -16,11 +16,11 @@ const StyledActiveChess = styled.div`
   }}
 `
 
-export default function ActiveChess({ square, boardRowIndex, squareIndex, handleClick }) {
+export default function ActiveChess({ square, boardRowIndex, squareIndex, onClick }) {
   return (
     <StyledActiveChess
       square={square}
-      onClick={handleClick(boardRowIndex, squareIndex)}
+      onClick={onClick(boardRowIndex, squareIndex)}
     />
   )
 }
@@ -33,5 +33,5 @@ ActiveChess.propTypes = {
   ]),
   boardRowIndex: PropTypes.number,
   squareIndex: PropTypes.number,
-  handleClick: PropTypes.func
+  onClick: PropTypes.func
 }
