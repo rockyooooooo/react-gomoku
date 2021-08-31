@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-gomoku/static/css/main.63f964b1.chunk.css",
-    "main.js": "/react-gomoku/static/js/main.7b8ae653.chunk.js",
-    "main.js.map": "/react-gomoku/static/js/main.7b8ae653.chunk.js.map",
+    "main.css": "/react-gomoku/static/css/main.f4c5e413.chunk.css",
+    "main.js": "/react-gomoku/static/js/main.96bb6885.chunk.js",
+    "main.js.map": "/react-gomoku/static/js/main.96bb6885.chunk.js.map",
     "runtime-main.js": "/react-gomoku/static/js/runtime-main.d9a7cdfa.js",
     "runtime-main.js.map": "/react-gomoku/static/js/runtime-main.d9a7cdfa.js.map",
     "static/js/2.1a775d0f.chunk.js": "/react-gomoku/static/js/2.1a775d0f.chunk.js",
     "static/js/2.1a775d0f.chunk.js.map": "/react-gomoku/static/js/2.1a775d0f.chunk.js.map",
     "index.html": "/react-gomoku/index.html",
-    "static/css/main.63f964b1.chunk.css.map": "/react-gomoku/static/css/main.63f964b1.chunk.css.map",
+    "static/css/main.f4c5e413.chunk.css.map": "/react-gomoku/static/css/main.f4c5e413.chunk.css.map",
     "static/js/2.1a775d0f.chunk.js.LICENSE.txt": "/react-gomoku/static/js/2.1a775d0f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d9a7cdfa.js",
     "static/js/2.1a775d0f.chunk.js",
-    "static/css/main.63f964b1.chunk.css",
-    "static/js/main.7b8ae653.chunk.js"
+    "static/css/main.f4c5e413.chunk.css",
+    "static/js/main.96bb6885.chunk.js"
   ]
 }
